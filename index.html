@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>부트스트랩연습.html</title>
+  <!-- 부트스트랩4 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <!-- 폰트어썸 5 -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <!-- 제이쿼리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- 부트스트랩4 JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <style>
+    .container {
+      /* outline: 2px solid red; */
+    }
+
+    .container-fluid {
+      /* outline: 2px solid red; */
+    }
+
+    [class*=col] {
+      /* outline: 2px solid green; */
+      padding: 20px;
+    }
+
+    section {
+      padding: 20px;
+    }
+
+    body {
+      padding-top: 70px;
+    }
+
+    /* 모바일 높이가 35px에 패딩 조정 */
+    @media screen and (max-width: 767px) {
+      body {
+        padding-top: 35px;
+      }
+    }
+
+    #section1 {}
+
+    .container-fluid {
+      background: #abc;
+    }
+
+    #kakao-talk-channel-chat-button{
+      position: fixed;
+      right: 40px;
+      bottom: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <!--  
+    .container: 1200px 정적 컨테이너
+    .container-fluid 가변 컨테이너(100%)
+    navbar-expand-md 화면 크기에 따라 변하는 툴바
+  -->
+  <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-md">
+    <div class="container">
+      <!-- 로고 -->
+      <a href="#" class="navbar-brand">Your Logo</a>
+      <!-- 토글 버튼 -->
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-content">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- 네비게이션 콘텐츠(목록) -->
+      <div class="collapse navbar-collapse" id="navbar-content">
+        <!-- ml-auto 우로 배치, mr-auto: 좌로배치 -->
+        <ul class="navbar-nav ml-auto navbar-right">
+          <li class="nav-item"><a class="nav-link" href="#">menu1</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">menu2</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">menu3</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">menu4</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">menu5</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="visual" class="container-fluid">
+    <div class="row">
+      <img class="img-fluid" src="http://placeimg.com/1920/800/tech" alt="visual">
+    </div>
+  </section>
+
+  <!-- 배경틀 -->
+  <div class="container-fluid">
+    <!-- 1200px 고정 틀 -->
+    <section id="section1" class="container">
+      <h1>제품소개</h1>
+      <div class="row">
+        <div class="col-md-4">
+          <img class="img-fluid" src="http://placeimg.com/600/500/tech/a" alt="1">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="http://placeimg.com/600/500/tech/b" alt="b">
+        </div>
+        <div class="col-md-4">
+          <img class="img-fluid" src="http://placeimg.com/600/500/tech/c" alt="c">
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h1>About</h1>
+    <div class="row">
+      <article class="col-md-5">
+        <h2>저를 소개합니다.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut esse facere neque cumque dolor nesciunt debitis
+          nobis fugiat quia suscipit omnis enim iusto, unde necessitatibus eos, quas odit iste et!</p>
+      </article>
+      <article class="col-md-7">
+        <img class="img-fluid" src="http://placeimg.com/600/500/tech/c" alt="1">
+      </article>
+    </div>
+  </section>
+
+  <section id="location">
+    <div id="map" class="container">
+      <h2>Loacation</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <!-- 지도 -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.5721296487854!2d126.8382473156475!3d37.54158223331383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357c9c4f460c32b7%3A0x68979fc65f1d6963!2z7ZmU6rOh7Jet!5e0!3m2!1sko!2skr!4v1590990003632!5m2!1sko!2skr"
+            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+            tabindex="0"></iframe>
+        </div>
+        <div class="col-md-6">
+          <!-- 지점 정보(주소) -->
+          <h4>회사 주소</h4>
+          <address>
+            <p>서울특별시 강남구 테헤란로 123</p>
+            <p><a href="tel:02-123-0000">tel: 02-123-0000</a></p>
+            <p><a href="tel:010-123-0001">hp: 010-123-0001</a></p>
+            <p>월-일 11-20시 <br>주차가능</p>
+          </address>
+        </div>
+      </div><!-- end row -->
+    </div>
+  </section>
+
+
+
+  <!-- kakao api -->
+  <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a2a623bfdc4dde17b428dcc303d2d52e"></script>
+
+  <!-- kakao 채널 버튼 -->
+  <button type="button" id="kakao-talk-channel-chat-button" data-channel-public-id="_xcLqmC"
+    style="border: 0px; background-color:transparent; cursor:pointer;" onclick="open_kakao_channel();">
+    <img alt="" src="http://bed072.godohosting.com/web/talk_btn01.png" style="width: 80px;">
+  </button>
+
+  <script>
+    // 카카오 채널 열기
+    function open_kakao_channel() {
+      Kakao.Channel.addChannel({
+        channelPublicId: '_xcLqmC'
+      });
+    }
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = '//developers.kakao.com/sdk/js/kakao.plusfriend.min.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    })(document, 'script', 'kakao-js-sdk');
+  </script>
+
+
+</body>
+
+</html>
