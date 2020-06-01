@@ -17,6 +17,10 @@
   <!-- 부트스트랩4 JS -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <style>
+    body {
+      padding-top: 56px;
+    }
+
     .container {
       /* outline: 2px solid red; */
     }
@@ -27,34 +31,42 @@
 
     [class*=col] {
       /* outline: 2px solid green; */
-      padding: 20px;
     }
 
     section {
       padding: 20px;
     }
 
-    body {
-      padding-top: 70px;
-    }
 
     /* 모바일 높이가 35px에 패딩 조정 */
-    @media screen and (max-width: 767px) {
-      body {
-        padding-top: 35px;
-      }
-    }
+    @media screen and (max-width: 767px) {}
 
-    #section1 {}
+    /* 768px 이상 */
+    @media screen and (min-width: 768px) {}
+
+    #product {}
 
     .container-fluid {
       background: #abc;
     }
 
-    #kakao-talk-channel-chat-button{
+    #kakao-talk-channel-chat-button {
       position: fixed;
       right: 40px;
       bottom: 80px;
+    }
+
+    .navbar {
+      
+    }
+
+    #visual.container-fluid {
+      /* border: 1px solid red; */
+      padding: 0;
+    }
+
+    .row {
+      /* border: 1px solid green; */
     }
   </style>
 </head>
@@ -96,7 +108,7 @@
   <!-- 배경틀 -->
   <div class="container-fluid">
     <!-- 1200px 고정 틀 -->
-    <section id="section1" class="container">
+    <section id="product" class="container">
       <h1>제품소개</h1>
       <div class="row">
         <div class="col-md-4">
